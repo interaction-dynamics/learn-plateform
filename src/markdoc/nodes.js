@@ -40,6 +40,14 @@ const nodes = {
       )
     },
   },
+  link: {
+    ...defaultNodes.link,
+    transform(node, config) {
+      const attributes = node.transformAttributes(config)
+      const children = node.transformChildren(config)
+      return new Tag(`a`, { ...attributes, target: '_blank' }, children)
+    },
+  },
   th: {
     ...defaultNodes.th,
     attributes: {

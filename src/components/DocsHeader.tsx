@@ -4,11 +4,18 @@ import { usePathname } from 'next/navigation'
 
 import { navigation } from '@/lib/navigation'
 
-export function DocsHeader({ title }: { title?: string }) {
-  let pathname = usePathname()
-  let section = navigation.find((section) =>
+const findSection = (pathname: string) =>
+  navigation.find((section) =>
     section.links.find((link) => link.href === pathname),
   )
+
+export interface Props {
+  title?: string
+}
+
+export default function DocsHeader({ title }: Props) {
+  const pathname = usePathname()
+  const section = findSection(pathname)
 
   if (!title && !section) {
     return null

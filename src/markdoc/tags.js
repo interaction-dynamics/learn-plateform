@@ -7,8 +7,8 @@ const tags = {
       title: { type: String },
       type: {
         type: String,
-        default: 'note',
-        matches: ['note', 'warning'],
+        default: 'default',
+        matches: ['note', 'warning', 'default'],
         errorLevel: 'critical',
       },
     },

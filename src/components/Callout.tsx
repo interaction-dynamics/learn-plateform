@@ -3,6 +3,12 @@ import clsx from 'clsx'
 import { Icon } from '@/components/Icon'
 
 const styles = {
+  default: {
+    container:
+      'bg-sky-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10',
+    title: 'text-sky-900 dark:text-sky-400',
+    body: 'text-sky-800 [--tw-prose-background:theme(colors.sky.50)] prose-a:text-sky-900 prose-code:text-sky-900 dark:text-slate-300 dark:prose-code:text-slate-300',
+  },
   note: {
     container:
       'bg-sky-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10',
@@ -19,20 +25,19 @@ const styles = {
 
 const icons = {
   note: (props: { className?: string }) => <Icon icon="lightbulb" {...props} />,
+  default: () => <></>,
   warning: (props: { className?: string }) => (
     <Icon icon="warning" color="amber" {...props} />
   ),
 }
 
-export function Callout({
-  title,
-  children,
-  type = 'note',
-}: {
+export interface Props {
   title: string
   children: React.ReactNode
   type?: keyof typeof styles
-}) {
+}
+
+export function Callout({ title, children, type = 'default' }: Props) {
   let IconComponent = icons[type]
 
   return (

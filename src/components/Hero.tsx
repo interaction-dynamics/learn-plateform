@@ -55,7 +55,7 @@ export function Hero() {
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Shortcut the standard learning curve. Learn from the experts.
-                Get all the best and up to date practices in one place.
+                Get all the best practices in one place.
               </p>
               {/* <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>

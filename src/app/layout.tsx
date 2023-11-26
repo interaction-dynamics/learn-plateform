@@ -1,8 +1,6 @@
 import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 
-import { Inter } from 'next/font/google'
-import localFont from 'next/font/local'
 import clsx from 'clsx'
 
 import { Providers } from '@/app/providers'
@@ -12,8 +10,8 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
+    template: '%s - Learn_Frontend',
+    default: 'Learn_Frontend - Become a better front-end developer',
   },
   description:
     'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
