@@ -1,6 +1,7 @@
 import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
 import clsx from 'clsx'
 
@@ -34,6 +35,16 @@ export default function RootLayout({
           <Layout>{children}</Layout>
         </Providers>
         <Analytics />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-B9NWYX3N5N');
+        `}
+        </Script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-B9NWYX3N5N" />
       </body>
     </html>
   )
