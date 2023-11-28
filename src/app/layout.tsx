@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
+import { Analytics } from '@vercel/analytics/react'
 
 import clsx from 'clsx'
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
