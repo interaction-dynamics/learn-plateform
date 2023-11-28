@@ -41,10 +41,12 @@ export default function RootLayout({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', 'G-B9NWYX3N5N');
+          gtag('config', '${process.env.GOOGLE_TAG_ID}}');
         `}
         </Script>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-B9NWYX3N5N" />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TAG_ID}`}
+        />
       </body>
     </html>
   )
