@@ -1,4 +1,4 @@
-# learn-plateform
+# learn-platform
 
 A platform to learn how to be a great frontend developer
 
