@@ -162,6 +162,11 @@ export const navigation = [
         disabled: true,
       },
       {
+        title: 'Six-week cycles',
+        href: '/docs/productivity/six-week-cycle',
+        disabled: true,
+      },
+      {
         title: 'Second brain',
         href: '/docs/productivity/second-brain',
         disabled: true,

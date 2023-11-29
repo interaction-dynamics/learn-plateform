@@ -47,7 +47,7 @@ export function Navigation({
                     )}
                   >
                     {link.title}{' '}
-                    {link.disabled ? <span className="pl-2">🛠️</span> : ''}
+                    {link.disabled ? <span className="pl-2">🚧</span> : ''}
                   </Link>
                 </li>
               ))}
