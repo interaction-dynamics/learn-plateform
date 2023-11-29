@@ -9,16 +9,16 @@ import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 
 const codeLanguage = 'javascript'
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
+const code = `export default function HelloWorld () {
+  return (
+    <div className="flex items-center justify-center h-screen">
+      Hello world
+    <div>
+  )
 }`
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
+  { name: 'HelloWord.tsx', isActive: true },
   { name: 'package.json', isActive: false },
 ]
 
