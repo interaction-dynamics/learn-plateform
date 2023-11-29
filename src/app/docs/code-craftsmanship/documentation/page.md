@@ -31,6 +31,10 @@ A README file should be present at the root of your project. It should contain t
 
 Try to keep the README as short as possible. If you need to add more information, you can create a `docs` folder and add more files inside. You can also add a link to the CONTRIBUTING.md file.
 
+{% callout %}
+Remember that most of the git repository hosting services will display the README file on the home page of your repository. So, it is the first thing that people will see when they visit your repository. It is a good idea to make it as attractive as possible. Use markdown to add some images, links, etc.
+{% /callout %}
+
 ---
 
 ## CONTRIBUTING

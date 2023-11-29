@@ -9,7 +9,10 @@ You need to have [pnpm](https://pnpm.io/) and [vercel cli](https://vercel.com/do
 ```bash
 pnpm install
 
+# if you use vercel
 vercel env pull
+# or copy and edit .env.local
+cp .env .env.local
 
 pnpm dev
 ```
