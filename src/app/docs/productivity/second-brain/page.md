@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Second brain
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Second brain
     description: Always use linters and formatters in your projects
 ---

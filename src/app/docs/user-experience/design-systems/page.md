@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Design Systems
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Design Systems
     description: Always use linters and formatters in your projects
 ---

@@ -1,7 +1,10 @@
 ---
-title: Browser APIs
+title: Heuristics Rules
 nextjs:
   metadata:
-    title: Browser APIs
-    description: Always use linters and formatters in your projects
+    title: Heuristics Rules
+    description: They are the job of Ux Designers but it is sometimes good to know how them.
 ---
+
+{% workinprogress %}
+{% /workinprogress %}

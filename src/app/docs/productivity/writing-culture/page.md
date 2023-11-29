@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Writing culture
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Writing culture
     description: Always use linters and formatters in your projects
 ---

@@ -6,6 +6,10 @@ nextjs:
     description: Always use linters and formatters in your projects
 ---
 
+{% workinprogress %}
+{% /workinprogress %}
+
+<!--
 ## HTTP calls
 
 ### REST API
@@ -16,4 +20,4 @@ nextjs:
 
 ## Server components
 
-## Static generation
+## Static generation -->

@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Artificial Intelligence
 nextjs:
   metadata:
-    title: Browser APIs
+    title: AI
     description: Always use linters and formatters in your projects
 ---

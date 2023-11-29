@@ -6,7 +6,7 @@ nextjs:
     description: Always use linters and formatters in your projects
 ---
 
-## Manifest
+<!-- ## Manifest
 
 ## Service Worker
 
@@ -18,4 +18,7 @@ nextjs:
 
 ## Web Share
 
-## Desktop App
+## Desktop App -->
+
+{% workinprogress %}
+{% /workinprogress %}

@@ -23,7 +23,10 @@ So, it is better to write a simple code that works for the current needs.
 
 ## How to keep it simple?
 
-TDD is a good way to keep it simple.
+{% workinprogress %}
+{% /workinprogress %}
+
+<!-- TDD is a good way to keep it simple. -->
 
 ## Waste of time?
 

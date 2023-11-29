@@ -40,10 +40,12 @@ Read this article about [Keeping React components maintainable with Open-closed 
 
 ## Liskov Substitution Principle
 
-IN PROGRESS
+{% workinprogress %}
+{% /workinprogress %}
 
----
+<!-- --- -->
 
+<!--
 ## Interface Segregation Principle
 
 IN PROGRESS
@@ -52,4 +54,4 @@ IN PROGRESS
 
 ## Dependency Inversion Principle
 
-IN PROGRESS
+IN PROGRESS -->

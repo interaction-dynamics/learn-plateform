@@ -10,7 +10,7 @@ Even if code is **specification** and should be self-explanatory, it is sometime
 
 ---
 
-## Documentation in code
+## In code
 
 Documentation in code should be reduced to strict minimum since it often becomes outdated. Having to describe each function and each class is a sign of code not being self-explanatory. However, it maybe useful to add few lines to explain a hack or a workaround.
 

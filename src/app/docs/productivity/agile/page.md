@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Agile
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Agile
     description: Always use linters and formatters in your projects
 ---

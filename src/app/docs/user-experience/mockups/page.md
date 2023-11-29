@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Mockups
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Mockups
     description: Always use linters and formatters in your projects
 ---

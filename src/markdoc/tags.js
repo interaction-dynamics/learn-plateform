@@ -1,4 +1,5 @@
 import { Callout } from '@/components/Callout'
+import WorkInProgress from '@/components/WorkInProgress'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
 const tags = {
@@ -13,6 +14,9 @@ const tags = {
       },
     },
     render: Callout,
+  },
+  workinprogress: {
+    render: WorkInProgress,
   },
   figure: {
     selfClosing: true,

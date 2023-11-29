@@ -1,7 +1,7 @@
 ---
-title: Browser APIs
+title: Analytics
 nextjs:
   metadata:
-    title: Browser APIs
+    title: Analytics
     description: Always use linters and formatters in your projects
 ---

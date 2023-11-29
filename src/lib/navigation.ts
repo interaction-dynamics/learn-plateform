@@ -40,18 +40,22 @@ export const navigation = [
       {
         title: 'Tests',
         href: '/docs/code-craftsmanship/tests',
+        disabled: true,
       },
       {
         title: 'A/B testing',
         href: '/docs/code-craftsmanship/a-b-testing',
+        disabled: true,
       },
       {
         title: 'CI/CD',
         href: '/docs/code-craftsmanship/ci-cd',
+        disabled: true,
       },
       {
         title: 'Git strategy',
         href: '/docs/code-craftsmanship/git-strategy',
+        disabled: true,
       },
       {
         title: 'Feature-based',
@@ -78,22 +82,27 @@ export const navigation = [
       {
         title: 'Style',
         href: '/docs/frontend-engineering/style',
+        disabled: true,
       },
       {
         title: 'Data fetching',
         href: '/docs/frontend-engineering/data-fetching',
+        disabled: true,
       },
       {
         title: 'Web APIs',
         href: '/docs/frontend-engineering/web-apis',
+        disabled: true,
       },
       {
         title: 'Progressive Web Apps',
         href: '/docs/frontend-engineering/progressive-web-apps',
+        disabled: true,
       },
       {
         title: 'Micro-services',
         href: '/docs/frontend-engineering/micro-services',
+        disabled: true,
       },
       // {
       //   title: 'Loading',
@@ -115,19 +124,27 @@ export const navigation = [
       {
         title: 'Accessibility',
         href: '/docs/user-experience/accessibility',
+        disabled: true,
       },
       {
         title: 'Heuristics rules',
         href: '/docs/user-experience/heuristics-rules',
+        disabled: true,
       },
       {
         title: 'Mockups',
         href: '/docs/user-experience/mockups',
+        disabled: true,
       },
-      { title: 'Analytics', href: '/docs/user-experience/analytics' },
+      {
+        title: 'Analytics',
+        href: '/docs/user-experience/analytics',
+        disabled: true,
+      },
       {
         title: 'Design systems',
         href: '/docs/user-experience/design-systems',
+        disabled: true,
       },
     ],
   },
@@ -137,14 +154,28 @@ export const navigation = [
       {
         title: 'AI',
         href: '/docs/productivity/ai',
+        disabled: true,
       },
       {
         title: 'Agile',
         href: '/docs/productivity/agile',
+        disabled: true,
       },
-      { title: 'Second brain', href: '/docs/productivity/second-brain' },
-      { title: 'Writing culture', href: '/docs/productivity/writing-culture' },
-      { title: 'No estimate', href: '/docs/productivity/no-estimate' },
+      {
+        title: 'Second brain',
+        href: '/docs/productivity/second-brain',
+        disabled: true,
+      },
+      {
+        title: 'Writing culture',
+        href: '/docs/productivity/writing-culture',
+        disabled: true,
+      },
+      {
+        title: 'No estimate',
+        href: '/docs/productivity/no-estimate',
+        disabled: true,
+      },
     ],
   },
   /*

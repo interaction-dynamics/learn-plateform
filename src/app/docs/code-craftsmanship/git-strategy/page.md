@@ -6,7 +6,10 @@ nextjs:
     description: How to manage your git repository to keep a clean history
 ---
 
-very neglected topic, seems obvious
+{% workinprogress %}
+{% /workinprogress %}
+
+<!-- very neglected topic, seems obvious
 
 -> git repository
 
@@ -18,4 +21,4 @@ bonus: oh-my-zsh, git aliases
 
 git hooks
 
-monorepo
+monorepo -->

@@ -6,11 +6,14 @@ nextjs:
     description: Always use linters and formatters in your projects
 ---
 
-- Clipboard
+{% workinprogress %}
+{% /workinprogress %}
+
+<!-- - Clipboard
 - Device Orientation
 - Fullscreen
 - Geolocation
 - Media Capture and Streams
 - File API
 
-- https://developer.mozilla.org/en-US/docs/Web/API
+- https://developer.mozilla.org/en-US/docs/Web/API -->
