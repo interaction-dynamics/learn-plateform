@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 function LogomarkPaths() {
   return (
     <g fill="none" stroke="#38BDF8" strokeLinejoin="round" strokeWidth={3}>
@@ -15,13 +17,12 @@ export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Logo(props: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <div className="flex items-center justify-start">
-      <svg aria-hidden="true" viewBox="0 0 227 36" fill="none">
-        <LogomarkPaths />
-      </svg>
-      <div className="font-bold">Learn_Frontend</div>
+    <div
+      className={clsx('flex items-center justify-start gap-2', props.className)}
+    >
+      <div className="text-md font-bold text-[#38BDF8]">Learn_frontend</div>
     </div>
   )
 }
