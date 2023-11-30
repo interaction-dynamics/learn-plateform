@@ -40,9 +40,7 @@ The goal of this platform is to improve your skills in front-end development. If
 
 ## Quick start
 
-We suggest to read the whole introduction chapter first. It will give you a good overview of the platform, the goal and how it works. Then, when you start a new chapter, the first page might be a good place to start. It will give you a good overview of the topic.
-
-The rest of the pages are designed to be as independent as possible. So, you can jump to a specific page if you want to learn something specific.
+We suggest to read the whole introduction chapter first. It will give you a good overview of the platform, the goal and how it works. The rest of the pages are designed to be as independent as possible. So, you can jump to a specific page if you want to learn something specific.
 
 You won't need all the skills described in this platform to be a good front-end developer. But the more you know, the better you will be. You can also consider this platform as a reference. You can come back to it when you need to learn something specific.
 

@@ -13,10 +13,10 @@ export const navigation = [
   {
     title: 'Code Craftsmanship',
     links: [
-      {
-        title: 'Introduction',
-        href: '/docs/code-craftsmanship/introduction',
-      },
+      // {
+      //   title: 'Introduction',
+      //   href: '/docs/code-craftsmanship/introduction',
+      // },
       {
         title: "Don't repeat yourself",
         href: '/docs/code-craftsmanship/dont-repeat-yourself',
@@ -119,7 +119,6 @@ export const navigation = [
       {
         title: 'Heuristics rules',
         href: '/docs/user-experience/heuristics-rules',
-        disabled: true,
       },
       {
         title: 'Mockups',
@@ -144,7 +143,6 @@ export const navigation = [
       {
         title: 'AI',
         href: '/docs/productivity/ai',
-        disabled: true,
       },
       {
         title: 'Agile',
