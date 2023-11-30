@@ -18,6 +18,16 @@ Documentation in code should be reduced to strict minimum since it often becomes
 
 You can use the eslint rule [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md) to enforce expiration date on TODO comments or link to a ticket in your issue tracker.
 
+However, if your code is for a library or a large open-source project, it might be useful to add some documentation in the code. In this case, you can use [jsdoc](https://jsdoc.app/) to document your code.
+
+---
+
+## Commit messages
+
+Commit messages are the first documentation of your project. They should be as clear as possible. They should explain what has been done and why. If developers used Pull Request/Merge requests, the number should be included in the commit message. Same thing about the ticket number. It will give a lot of context for a future reader of the code.
+
+In comparison of the other kind of documentation, they are, by design, always up to date. Used with `git blame`, they can be very useful to understand why a line of code has been written.
+
 ---
 
 ## README

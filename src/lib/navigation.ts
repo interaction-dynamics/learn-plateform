@@ -82,7 +82,6 @@ export const navigation = [
       {
         title: 'Style',
         href: '/docs/frontend-engineering/style',
-        disabled: true,
       },
       {
         title: 'Data fetching',
