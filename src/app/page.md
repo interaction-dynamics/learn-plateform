@@ -52,6 +52,6 @@ You won't need all the skills described in this platform to be a good front-end 
 
 You think something is missing or you found a mistake? Feel free to [open an issue](https://github.com/interaction-dynamics/learn-plateform/issues).
 
-### Join the community
+<!-- ### Join the community
 
-You want to discuss about a specific topic? Feel free to join the discord.
+You want to discuss about a specific topic? Feel free to join the discord. -->
