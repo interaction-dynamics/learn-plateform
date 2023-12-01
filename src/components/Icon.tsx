@@ -1,5 +1,11 @@
 import { useId } from 'react'
 import clsx from 'clsx'
+import {
+  CodeBracketSquareIcon,
+  AcademicCapIcon,
+  CursorArrowRippleIcon,
+  BoltIcon,
+} from '@heroicons/react/24/solid'
 
 import { InstallationIcon } from '@/components/icons/InstallationIcon'
 import { LightbulbIcon } from '@/components/icons/LightbulbIcon'
@@ -17,6 +23,13 @@ const icons = {
   warning: WarningIcon,
 }
 
+const fullIcons = {
+  codecraftsmanship: CodeBracketSquareIcon,
+  frontendengineering: AcademicCapIcon,
+  userexperience: CursorArrowRippleIcon,
+  productivity: BoltIcon,
+}
+
 const iconStyles = {
   blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
   amber:
@@ -30,10 +43,16 @@ export function Icon({
   ...props
 }: {
   color?: keyof typeof iconStyles
-  icon: keyof typeof icons
+  icon: keyof typeof icons | keyof typeof fullIcons
 } & Omit<React.ComponentPropsWithoutRef<'svg'>, 'color'>) {
+  if (icon in fullIcons) {
+    let IconComponent = fullIcons[icon as keyof typeof fullIcons]
+
+    return <IconComponent className={clsx(className, 'fill-blue-400')} />
+  }
+
   let id = useId()
-  let IconComponent = icons[icon]
+  let IconComponent = icons[icon as keyof typeof icons]
 
   return (
     <svg

@@ -10,13 +10,13 @@ This platform is not like other programming courses. It won't teach you how to c
 
 {% quick-links %}
 
-{% quick-link title="Code Craftsmanship" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Code Craftsmanship" icon="codecraftsmanship" href="/docs/code-craftsmanship/dont-repeat-yourself" description="Improve your code quality based on experience." /%}
 
-{% quick-link title="User Experience" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Front-end engineering" icon="frontendengineering" href="/docs/front-end-engineering/typescript" description="Discover the best tools for your front-end projects." /%}
 
-{% quick-link title="Productivity" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
+{% quick-link title="User Experience" icon="userexperience" href="/docs/user-experience/localization" description="Lean how to deliver user interfaces actually usable." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="Productivity" icon="productivity" href="/docs/productivity/ai" description="Get tips how to become more productive and code faster." /%}
 
 {% /quick-links %}
 
