@@ -37,7 +37,7 @@ You can find more information about these rules on [Jakob Nielsen's website](htt
 
 ## Laws of UX
 
-Laws of UX is a collection of the key maxims that designers must consider about spacing and layouts. It was created by [Jon Yablonski](https://jonyablonski.com/).
+Laws of UX is a collection of the key maxims that designers must consider and must specifically spacing and layouts. It is very easy to understand thanks
 
 The laws are accessible on [lawsofux.com](https://lawsofux.com/).
 
