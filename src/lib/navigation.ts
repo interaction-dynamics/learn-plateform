@@ -65,6 +65,10 @@ export const navigation = [
         title: 'Documentation',
         href: '/docs/code-craftsmanship/documentation',
       },
+      {
+        title: 'Say No',
+        href: '/docs/code-craftsmanship/say-no',
+      },
     ],
   },
   {

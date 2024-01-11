@@ -8,7 +8,7 @@ nextjs:
 
 As a front-end developer, you can use artificial intelligence to improve your productivity. Here are some tools that can help you.
 
-- [ChatGPT](https://chatgpt.com/): A chatbot that can help you to find the right words to express your ideas.
+- [ChatGPT](https://chatgpt.com/): A chatbot that can help you to find the right words to express your ideas or even find some code examples.
 - [Copilot](https://github.com/features/copilot): An AI pair programmer that helps you write code faster and with less effort.
 - [Midjourney](https://www.midjourney.com/home): A tool to generate images, very useful for landing pages.
 - [v0.dev](https://v0.dev/): A tool to generate user interfaces using tailwind (currently in beta).
