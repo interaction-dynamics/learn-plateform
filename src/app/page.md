@@ -50,7 +50,7 @@ You won't need all the skills described in this platform to be a good front-end 
 
 ### Submit an issue
 
-You think something is missing or you found a mistake? Feel free to [open an issue](https://github.com/interaction-dynamics/learn-plateform/issues).
+You think something is missing or you found a mistake? Feel free to [open an issue](https://github.com/interaction-dynamics/learn-platform/issues/new).
 
 <!-- ### Join the community
 
