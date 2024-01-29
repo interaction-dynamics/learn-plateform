@@ -18,7 +18,7 @@ A developer in a tech organization is the one transforming specifications into a
 A common practice in the tech industry is to scratch a product to create a better version of the same product. This is often the clue that the product was implemented without following the best practices. This is a waste of time and money. It is better to keep the product up to date and maintainable.
 {% /callout %}
 
-The role of a developer is to make the difference between a product that will be maintained and a product that will be scratched. Developers shouldn't expect Product owners or project manager to give some bandwidth for maintaince.
+The role of a developer is to make the difference between a product that will be maintained and a product that will be scratched. Developers shouldn't expect product owners or project manager to give some bandwidth for maintaince.
 
 Being better means being able to deliver a product that will be maintained over time so that your organization can save money and time, and be more competitive.
 
