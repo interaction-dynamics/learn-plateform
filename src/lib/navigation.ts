@@ -139,6 +139,11 @@ export const navigation = [
         href: '/docs/user-experience/design-systems',
         disabled: true,
       },
+      {
+        title: 'Iteration process',
+        href: '/docs/user-experience/interation-process',
+        disabled: true,
+      },
     ],
   },
   {
@@ -171,6 +176,11 @@ export const navigation = [
       {
         title: 'No estimate',
         href: '/docs/productivity/no-estimate',
+        disabled: true,
+      },
+      {
+        title: 'No Rules Rules',
+        href: '/docs/productivity/no-rules-rules',
         disabled: true,
       },
     ],

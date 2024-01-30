@@ -33,6 +33,8 @@ The 10 general principles for interaction design are:
 
 You can find more information about these rules on [Jakob Nielsen's website](https://www.nngroup.com/articles/ten-usability-heuristics/).
 
+> **Note**: Heuristics rules are general principles based on experience and formal studies. They are not always the best solution for a specific problem. Keep in my mind that a user test is always better than a heuristic evaluation.
+
 ---
 
 ## Laws of UX
