@@ -27,7 +27,7 @@ src/
     └── data.ts
 ```
 
-The problem of this kind of architecture based on layers is that it is hard to find the code related to a feature. For example, if you want to find the code related to the login page, you have to search in the `components`, `hooks`, `utils` and `state` folders.
+The problem with this kind of architecture based on layers is that it is hard to find the code related to a feature. For example, if you want to find the code related to the login page, you have to search in the `components`, `hooks`, `utils` and `state` folders. It makes it harder to debug and to remove a feature.
 
 A better way to organize your project is to group the code by feature. For example, the login page will be in the `login` folder and the dashboard page in the `dashboard` folder.
 
