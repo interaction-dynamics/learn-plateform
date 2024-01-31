@@ -14,7 +14,7 @@ Since it is not code, this topic is very often neglected by developers. However,
 
 Writing a right commit message is not easy. It is a mix between art and science. You should keep it short enough to be readable but long enough to be understandable and to give enough context. The good practice is to keep the first line short and to add more details in the body of the commit message.
 
-The commit message can be used to documentate your codebase. It is the first thing that people will see when they use `git blame` to understand why a line of code has been written. Read the section [documentation/git message](../documentation/page) to learn why it is a good source of documentation.
+The commit message can be used to documentate your codebase. It is the first thing that people will see when they use `git blame` to understand why a line of code has been written. Read the section [documentation/git message](../documentation) to learn why it is a good source of documentation.
 
 A good commit message should answer the following questions:
 
@@ -22,7 +22,7 @@ A good commit message should answer the following questions:
 - Why has it been done?
 - How has it been done? if the code is not self-explanatory
 
-The [Conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/) is a good practice to follow.
+The [conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/) is a good practice to follow.
 
 ## Merge strategy
 

@@ -30,7 +30,7 @@ In comparison of the other kind of documentation, they are, by design, always up
 
 Commit messages with a strong convention can be used to generate a CHANGELOG file. It is a good way to keep your CHANGELOG up to date.
 
-The [Conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/) is a good practice to follow.
+The [conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/) is a good practice to follow.
 
 ---
 
