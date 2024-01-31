@@ -48,4 +48,4 @@ Git hooks are scripts that are executed before or after a git command. They can 
 
 When a project becomes bigger or if new developers join the team, it can be useful to set up some git hooks to ensure that the best practices are respected before triggering the continuous integration pipeline.
 
-Official git documentation: [https://git-scm.com/docs/githooks](https://git-scm.com/docs/githooks)
+Official git documentation: [https://git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
