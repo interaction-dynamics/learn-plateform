@@ -26,7 +26,11 @@ However, if your code is for a library or a large open-source project, it might 
 
 Commit messages are the first documentation of your project. They should be as clear as possible. They should explain what has been done and why. If developers used Pull Request/Merge requests, the number should be included in the commit message. Same thing about the ticket number. It will give a lot of context for a future reader of the code.
 
-In comparison of the other kind of documentation, they are, by design, always up to date. Used with `git blame`, they can be very useful to understand why a line of code has been written.
+In comparison of the other kind of documentation, they are, by design, always up to date. Used with `git blame`, they can be very useful to understand why a line of code has been written. It is also a smart to use them to document your codebase since they automatically contain the author, the date of the change, all the changes made in the commit, etc.
+
+Commit messages with a strong convention can be used to generate a CHANGELOG file. It is a good way to keep your CHANGELOG up to date.
+
+The [Conventional commits format](https://www.conventionalcommits.org/en/v1.0.0/) is a good practice to follow.
 
 ---
 
@@ -51,6 +55,8 @@ Remember that most of the git repository hosting services will display the READM
 
 A CONTRIBUTING file is often neglected but it is very useful to explain how to contribute to your project. It will help you to avoid answering the same questions again and again.
 Don't hesitate to be exhaustive and to explain how to run the tests, how to build the project, how to deploy it, how to write a commit message, how to write a pull request, etc. Potential contributors should take enough time to read this file before contributing to your project.
+
+The good strategy is to keep the README file as short as possible to avoid scaring people who just onboarded on your project and to add more of the technical details in the CONTRIBUTING file.
 
 ---
 

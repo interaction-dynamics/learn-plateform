@@ -55,7 +55,6 @@ export const navigation = [
       {
         title: 'Git strategy',
         href: '/docs/code-craftsmanship/git-strategy',
-        disabled: true,
       },
       {
         title: 'Feature-based',
