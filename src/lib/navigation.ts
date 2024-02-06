@@ -40,7 +40,14 @@ export const navigation = [
       {
         title: 'Tests',
         href: '/docs/code-craftsmanship/tests',
-        disabled: true,
+      },
+      {
+        title: 'Git strategy',
+        href: '/docs/code-craftsmanship/git-strategy',
+      },
+      {
+        title: 'Documentation',
+        href: '/docs/code-craftsmanship/documentation',
       },
       {
         title: 'A/B testing',
@@ -53,16 +60,8 @@ export const navigation = [
         disabled: true,
       },
       {
-        title: 'Git strategy',
-        href: '/docs/code-craftsmanship/git-strategy',
-      },
-      {
         title: 'Feature-based',
         href: '/docs/code-craftsmanship/feature-based',
-      },
-      {
-        title: 'Documentation',
-        href: '/docs/code-craftsmanship/documentation',
       },
       {
         title: 'Say No',
@@ -104,6 +103,7 @@ export const navigation = [
       {
         title: 'Micro-services',
         href: '/docs/frontend-engineering/micro-services',
+        disabled: true,
       },
     ],
   },

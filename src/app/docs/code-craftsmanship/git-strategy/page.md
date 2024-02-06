@@ -32,11 +32,11 @@ Using `rebase` strategy to merge your branches on the main branch will also help
 
 ## Trunk-based development, git flow, or something else?
 
-There are a lot of different strategies to manage your git repository. The most popular are [trunk-based development](https://trunkbaseddevelopment.com/), [git flow](https://nvie.com/posts/a-successful-git-branching-model/), and [github flow](https://guides.github.com/introduction/flow/). They all have pros and cons. You should choose the one that fits your needs.
+There are a lot of different strategies when you should merge your branches on the main branch. The most popular are [trunk-based development](https://trunkbaseddevelopment.com/), [git flow](https://nvie.com/posts/a-successful-git-branching-model/), and [github flow](https://guides.github.com/introduction/flow/). They all have pros and cons. You should choose the one that fits your needs.
 
-Trunk-based development is a good strategy for small teams. It is very simple to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy.
+**Trunk-based development** is a good strategy for small teams. It is very simple to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy.
 
-Git flow is a good strategy for large teams. It is more complex to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy. It takes more time to have your code merged on the main branch but it is safer so it matches perfectly the larger organizations.
+**Git flow** is a good strategy for large teams. It is more complex to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy. It takes more time to have your code merged on the main branch but it is safer so it matches perfectly the larger organizations.
 
 ## Mono-repository
 
@@ -47,5 +47,7 @@ A mono-repository is a git repository that contains multiple projects. It is use
 Git hooks are scripts that are executed before or after a git command. They can be used to enforce some rules. For example, you can use a git hook to ensure that the commit message follows a specific format. You can also use a git hook to ensure that the code is formatted before committing it.
 
 When a project becomes bigger or if new developers join the team, it can be useful to set up some git hooks to ensure that the best practices are respected before triggering the continuous integration pipeline.
+
+Just remember that git hooks may be overridden by the developers. It is a good idea to use them to enforce some rules but it is also a good idea to have a CI/CD pipeline that will ensure that the rules are respected.
 
 Official git documentation: [https://git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
