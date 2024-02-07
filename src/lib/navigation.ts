@@ -8,6 +8,10 @@ export const navigation = [
         title: 'Better developer',
         href: '/docs/introduction/better-developer',
       },
+      {
+        title: 'About the author',
+        href: '/docs/introduction/about',
+      },
     ],
   },
   {

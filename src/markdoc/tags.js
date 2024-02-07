@@ -33,6 +33,23 @@ const tags = {
       </figure>
     ),
   },
+  avatar: {
+    selfClosing: true,
+    attributes: {
+      src: { type: String },
+      alt: { type: String },
+      caption: { type: String },
+    },
+    render: ({ src, alt = '', caption }) => (
+      <div class="flex items-center justify-center text-center">
+        <figure>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={src} alt={alt} class="w-72 rounded-full" />
+          <figcaption>{caption}</figcaption>
+        </figure>
+      </div>
+    ),
+  },
   'quick-links': {
     render: QuickLinks,
   },
