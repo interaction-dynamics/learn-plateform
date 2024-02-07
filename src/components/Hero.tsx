@@ -10,7 +10,7 @@ import blurIndigoImage from '@/images/blur-indigo.png'
 const codeLanguage = 'javascript'
 const code = `export default function HelloWorld () {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center h-screen">
       Hello world
     <div>
   )
