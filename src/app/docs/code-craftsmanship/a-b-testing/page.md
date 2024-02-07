@@ -8,11 +8,4 @@ nextjs:
 
 A/B testing is a method of comparing two versions of a webpage or app against each other to determine which one performs better.
 
-{% workinprogress %}
-{% /workinprogress %}
-
-<!-- ## Why A/B testing?
-
-feature flag.
-
-p-value. -->
+{% workinprogress /%}

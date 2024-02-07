@@ -14,5 +14,4 @@ There are a list of interesting books about design patterns:
 
 - [www.patterns.dev](https://www.patterns.dev/)
 
-{% workinprogress %}
-{% /workinprogress %}
+{% workinprogress /%}

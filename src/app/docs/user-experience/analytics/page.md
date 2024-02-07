@@ -5,3 +5,5 @@ nextjs:
     title: Analytics
     description: Always use linters and formatters in your projects
 ---
+
+{% workinprogress /%}

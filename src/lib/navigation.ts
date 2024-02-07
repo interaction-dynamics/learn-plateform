@@ -32,6 +32,7 @@ export const navigation = [
       {
         title: 'Architectural patterns',
         href: '/docs/code-craftsmanship/architectural-patterns',
+        disabled: true,
       },
       {
         title: 'KISS principle',
