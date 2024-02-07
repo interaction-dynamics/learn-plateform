@@ -25,8 +25,6 @@ A lot of tools exist to measure the test coverage of your codebase:
 - [Jest](https://jestjs.io/)
 - [Sonarcloud](https://sonarcloud.io/)
 
-Some of them are integrated into your CI/CD pipeline and will fail the build if the test coverage is not high enough. They can fail if the global test coverage is below a threshold or if the test coverage of any new file is below a threshold. This is a good way to enforce a good test coverage.
-
 It is also important to check the different sections of the coverage reports like **branch**, **function**, **line** and **statement** coverage. A high statement coverage does not mean that the codebase is well tested. You also need to have a high branch coverage. A high branch coverage means that you have tested all the different paths of your codebase.
 
 ```bash
@@ -47,6 +45,16 @@ All files                   |   98.78 |    89.47 |     100 |   98.68 |
 ----------------------------|---------|----------|---------|---------|-------------------
 ```
 
+## Test automation
+
+If the tests are run only manually by devs, there are a lot of chances that they will not be run frequently. This is why it is important to automate the tests.
+
+Setup your CI/CD pipeline to run the tests on every commit. This will allow you to catch bugs and regressions early in the development process. It will also allow you to catch bugs and regressions introduced by other devs.
+
+Some of them are integrated into your CI/CD pipeline and will fail the build if the test coverage is not high enough. They can fail if the global test coverage is below a threshold or if the test coverage of any new file is below a threshold. This is a good way to enforce a good test coverage.
+
+{% figure alt="Coverage" src="/assets/coverage.png" caption="Sonarcloud analyzes the test coverage" /%}
+
 ## Pyramid of tests
 
 There are different types of tests that you can use to test your codebase. The most common types of tests are:
@@ -55,12 +63,20 @@ There are different types of tests that you can use to test your codebase. The m
 - integration tests
 - end-to-end tests
 
-In the ideal world, only end-to-end tests would be enough to test your codebase. But in the real world, it is not possible to have a good test coverage with only end-to-end tests. They are slow to run, not always stable, and they are hard to maintain.
+In the ideal world, only end-to-end tests would be enough to test your codebase. But in the real world, it is not possible to have a good test coverage with only end-to-end tests. They are slow to run, not always stable, and hard to maintain.
 
-The most common way to test your codebase is to use a mix of different types of tests. The most common way to mix them is to use the pyramid of tests.
+The most common way to test your codebase is to use a mix of different types of tests following the strategy of the pyramid of tests.
 
-{% 690 alt="pyramid" src="/assets/pyramid.jpg" caption="Pyramid of tests" /%}
+{% figure alt="pyramid" src="/assets/pyramid-test.png" caption="" /%}
 
-![Pyramid](/assets/pyramid.jpg)
+This pyramid represents the amount of tests you should add to your code: a majority of unit tests, a smaller amount of integration tests, and an even smaller amount of end-to-end tests.
 
 ## AAA pattern
+
+When writing tests, it is important to follow the AAA pattern:
+
+- **Arrange**: set up the test environment
+- **Act**: execute the code to be tested
+- **Assert**: check the result
+
+This pattern will make your tests more readable and maintainable.
