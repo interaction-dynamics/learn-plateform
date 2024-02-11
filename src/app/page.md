@@ -12,7 +12,7 @@ This platform is not like other programming courses. It won't teach you how to c
 
 {% quick-link title="Code Craftsmanship" icon="codecraftsmanship" href="/docs/code-craftsmanship/dont-repeat-yourself" description="Improve your code quality based on experience." /%}
 
-{% quick-link title="Front-end engineering" icon="frontendengineering" href="/docs/front-end-engineering/typescript" description="Discover the best tools for your front-end projects." /%}
+{% quick-link title="Front-end engineering" icon="frontendengineering" href="/docs/frontend-engineering/typescript" description="Discover the best tools for your front-end projects." /%}
 
 {% quick-link title="User Experience" icon="userexperience" href="/docs/user-experience/localization" description="Lean how to deliver user interfaces actually usable." /%}
 
