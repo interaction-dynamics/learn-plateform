@@ -151,6 +151,8 @@ buildUrl('example.com', false)
 
 In addition, flag arguments are a sign that the function is doing more than one thing. It is better to split the function in two functions. Read [Single Responsibility Principle](/docs/code-craftsmanship/solid-principles/single-responsibility-principle) and [Avoid Spaghetti code](#avoid-spaghetti-code) below for more details.
 
+In JS framework, flag arguments can be replaced by composition pattern. Read the article [Keep your React Components maintainable with SOLID & React Composition— CodeCraftsmanship #4](https://medium.com/interaction-dynamics/keep-your-react-components-maintainable-with-solid-react-composition-codecraftsmanship-4-2969834e9ffa) for more details.
+
 ---
 
 ## Avoid Spaghetti code
