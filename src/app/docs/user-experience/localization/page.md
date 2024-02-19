@@ -95,7 +95,7 @@ new Intl.DateTimeFormat('en-GB', {
 // Expected output: "Sun, 20 December 2020"
 ```
 
-However, it doesn't support all the possible formats. For example, you can't format the date like `DD/MM/YYYY`. So you may need to use a library like [date-fns](https://date-fns.org/). The library is quite heavy however.
+However, it doesn't support all the possible formats. For example, you can't format the date like `DD/MM/YYYY`. So you may need to use a library like [date-fns](https://date-fns.org/). The library is quite heavy however. We recommend to use it only if you need to manage date formats that are not supported by the `Intl.DateTimeFormat` API. If you control the formats, you should use the `Intl.DateTimeFormat` API.
 
 {% callout type="warning" %}
 Don't use library [moment](https://momentjs.com/) to format the dates. The library is deprecated and it is not recommended by the community anymore.
@@ -107,9 +107,9 @@ Finally because of the timezones, the date and time may be different from one co
 
 Most of the libraries natively support the timezone. So you don't need to worry about it. Just check the documentation of the function you use to adapt the date and time based on the timezone.
 
-The best practice is to manage date with [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) at the UTC timezone aka like `2019-09-07T15:50:04:00Z`.
+The best practice is to manage date with [Date time string format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format) at the UTC timezone aka like `2019-09-07T15:50:04:00Z` and to use [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat).
 
-Reminder: when you insert a date in the datatbase, you should use same the ISO 8601 format (including the hours, minutes and seconds).
+Reminder: when you insert a date in the datatbase, you should use the same Date time string format (including the hours, minutes and seconds).
 
 ## Currency
 
