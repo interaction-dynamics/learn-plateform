@@ -145,7 +145,7 @@ function renderTotalPrice(prices: number[], inDollar: boolean) {
 }
 ```
 
-Flag arguments are sign that the function is doing more than one thing. And they break the [Single Responsibility Principle](/docs/code-craftsmanship/solid-principles/single-responsibility-principle).
+Flag arguments are sign that the function is doing more than one thing. And they break the [Single Responsibility Principle](/docs/code-craftsmanship/solid-principle#single-responsibility-principle).
 
 You should avoid flag arguments for multiple reasons:
 
