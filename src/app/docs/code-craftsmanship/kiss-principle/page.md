@@ -21,19 +21,19 @@ Also having more code means more bugs and more maintenance.
 
 So, it is better to write a simple code that works for the current needs.
 
-## How to keep it simple?
-
-{% workinprogress %}
-{% /workinprogress %}
-
-<!-- TDD is a good way to keep it simple. -->
-
 ## Waste of time?
 
 The KISS principle is often considered as a waste of time by software architects. They think we can optimize by going directly to the generic solution. But in reality, it is often the opposite. The generic solution is often more complex and more difficult to maintain. So it is more expensive in the long term.
 
 An alternative is to keep the code simple but prepare it so it is easy to extend later if needed.
 
-There are several variants of the KISS principle:
+<!-- There are several variants of the KISS principle:
 
-- Steve Jobs's "~~Simplify~~, ~~Simplify~~, Simplify", which simplified Henry David Thoreau's quote "Simplify, simplify, simplify." for emphasis.
+- Steve Jobs's "~~Simplify~~, ~~Simplify~~, Simplify", which simplified Henry David Thoreau's quote "Simplify, simplify, simplify." for emphasis. -->
+
+## How to keep it simple?
+
+{% workinprogress %}
+{% /workinprogress %}
+
+<!-- TDD is a good way to keep it simple. -->

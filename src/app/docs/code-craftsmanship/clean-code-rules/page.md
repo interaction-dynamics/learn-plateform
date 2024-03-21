@@ -130,28 +130,62 @@ buildUrl('https://example.com', port)
 
 ## Avoid flag arguments
 
-Flag arguments are boolean arguments that tell the function to behave in different ways. They are hard to understand and to maintain.
+Flag arguments are boolean or enum arguments to trigger different behavior in a function.
 
 For example:
 
 ```ts
 // Bad example
-function buildUrl(url: string, isSecure: boolean) {
-  if (isSecure) {
-    return `https://${url}`
-  }
+function renderTotalPrice(prices: number[], inDollar: boolean) {
+  const sum = prices.reduce((sum, price) => sum + price, 0)
 
-  return `http://${url}`
+  const priceWithCurrency = inDollar ? `$${sum} USD` : `${sum} €`
+
+  return `total price: ${priceWithCurrency}`
 }
-
-// we often see after
-buildUrl('example.com', true) // <-- we don't know what true means without reading the function declaration
-buildUrl('example.com', false)
 ```
 
-In addition, flag arguments are a sign that the function is doing more than one thing. It is better to split the function in two functions. Read [Single Responsibility Principle](/docs/code-craftsmanship/solid-principles/single-responsibility-principle) and [Avoid Spaghetti code](#avoid-spaghetti-code) below for more details.
+Flag arguments are sign that the function is doing more than one thing. And they break the [Single Responsibility Principle](/docs/code-craftsmanship/solid-principles/single-responsibility-principle).
 
-In JS framework, flag arguments can be replaced by composition pattern. Read the article [Keep your React Components maintainable with SOLID & React Composition— CodeCraftsmanship #4](https://medium.com/interaction-dynamics/keep-your-react-components-maintainable-with-solid-react-composition-codecraftsmanship-4-2969834e9ffa) for more details.
+You should avoid flag arguments for multiple reasons:
+
+- it is less readable since you have to understand the 2 behaviors
+- it makes the function harder to test since you have to test the 2 behaviors
+- it reduces the maintainability of the function since you have to be careful of the 2 behaviors
+- it is not scalable, if you have to add a new behavior, you have to add a new flag argument and will finish with 15 arguments very soon.
+
+You have multiple ways to avoid flag arguments:
+
+- polymorphism
+- composition, (you can read the article [Keep your React Components maintainable with SOLID & React Composition— CodeCraftsmanship #4](https://medium.com/interaction-dynamics/keep-your-react-components-maintainable-with-solid-react-composition-codecraftsmanship-4-2969834e9ffa))
+
+For polymorphism, you can use the strategy pattern. It is a pattern where you have a dedicated class for each behavior. You can also just use the Inversion of Control principle and give the control to a parent function like in the example below.
+
+```ts
+function sumTotalPrice(prices: number[]) {
+  return prices.reduce((sum, price) => sum + price, 0)
+}
+
+function addEuro(price: number) {
+  return `${sum} €`
+}
+function addUsDollar(price: number) {
+  return `$${sum} USD`
+}
+
+function renderTotalPrices(priceWithCurrency: string) {
+  return `total price: ${priceWithCurrency}`
+}
+
+renderTotalPrices(sumTotalPrice([1, 2, 3]), addEuro)
+renderTotalPrices(sumTotalPrice([1, 2, 3]), addUsDollar)
+```
+
+The parent function now controls the chain of the sequence (sum + currency + adding label) but the code is more readable, maintainable and scalable.
+
+<!-- In addition, flag arguments are a sign that the function is doing more than one thing. It is better to split the function in two functions. Read [Single Responsibility Principle](/docs/code-craftsmanship/solid-principles/single-responsibility-principle) and [Avoid Spaghetti code](#avoid-spaghetti-code) below for more details.
+
+In JS framework, flag arguments can be replaced by composition pattern. Read the article [Keep your React Components maintainable with SOLID & React Composition— CodeCraftsmanship #4](https://medium.com/interaction-dynamics/keep-your-react-components-maintainable-with-solid-react-composition-codecraftsmanship-4-2969834e9ffa) for more details. -->
 
 ---
 
@@ -160,30 +194,24 @@ In JS framework, flag arguments can be replaced by composition pattern. Read the
 Spaghetti code is when the code of multiple feature is mixed together. It is so interingled that it is hard to understand and to maintain. If you want to debug a feature, you have to understand the whole codebase. You can't also easily remove a feature without breaking the whole codebase.
 
 ```ts
-// Bad example
-function buildUrl(url: string, isSecure: boolean) {
-  if (isSecure) {
-    return `https://${url}`
+const isUserLoggedIn = await User.isLoggedIn()
+
+const currency = await User.getSelectedCurrency()
+
+if (isUserLoggedIn) {
+  const prices = await fetchPrices()
+  const totalPrice = prices.reduce((sum, price) => sum + price, 0)
+
+  if (currency === 'USD') {
+    return `$${totalPrice} USD`
+  } else {
+    return `${totalPrice} €`
   }
-
-  return `http://${url}`
+} else {
+  return 'Please log in'
 }
 ```
 
-In the example above, the function is doing two things: building the url for both http and https.
-
-Very often, a function is doing two things because it is in control of things that shouldn't be in its scope. A solution is also apply an inversion of control and give the control about one part to another function.
-
-```ts
-function buildUrl(protocol: string, url: string) {
-  return `${protocol}://${url}`
-}
-
-function secureUrl() {
-  return 'https
-}
-
-buildUrl(secureUrl(), 'example.com') // <-- this code has the responsibility to choose between http and https
-```
+You understand that in the example above the authenticated feature and the the currency feature are mixed together. It is better to split the code in two blocks of code or event better 2 functions..
 
 > The example above is extremely simplistic on purpose. In reality, it will be more complex. The point is to show that the function is doing only one thing. You can see an example in a more realistic context in this presentation [Composition Pattern in React](https://friedrith.github.io/react-composition/slides/#/1).
