@@ -20,11 +20,11 @@ Sometimes, duplications are also a sign that the architecture of your applicatio
 
 ---
 
-## When is duplication authorized
+## Sometimes duplication is better
 
 Sometimes it is better to duplicate code than to have complex code that is hard to understand or to update.
 
-Also your code should be considered as specification. For example, if you are writing code to enable or disable the same business rule for two different features. It might be better to duplicate to show that the business rules are the same for these two features. It is even more relevant if you have the same pattern for three or more features with sometimes not the same business rules or not the same inputs for the business rules.
+Also your code should be considered as specification. For example, if you are writing code to enable or disable the same business rule for two different features. It might be better to duplicate to show that the business rules are the same for these two features.
 
 For example, duplication is authorized in the following case:
 
