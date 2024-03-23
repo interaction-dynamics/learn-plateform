@@ -26,11 +26,11 @@ This platform is not like other programming courses. It won't teach you how to c
 
 ### Curated list
 
-This platform is a curated list of best practices to improve your skills in front-end development. We keep it up-to-date with the latest trends and technologies. We also try to keep it as simple as possible. We don't want to overwhelm you with too much information.
+This platform is a curated list of best practices, collected with years of experience. It will help you improve your skills in front-end development. We keep it up-to-date with the latest trends and technologies. We also try to keep it as simple as possible. We don't want to overwhelm you with too much information.
 
 ### Opinionated
 
-In order to be efficient, this platform can't cover all the possible ways to do things. The curated list of best practices is opinionated. It means that we will tell you what we think is the best way to do things. It doesn't mean that it is the only way to do things.
+In order to be efficient, this platform can't cover all the possible ways to do the right things. The curated list of best practices is opinionated. It means that we will tell you what we think is the best way to do things. It doesn't mean that it is the only way to do things.
 
 ### Not the basics
 
