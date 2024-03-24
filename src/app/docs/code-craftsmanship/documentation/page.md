@@ -107,3 +107,7 @@ You can generate a Pull Request template for github with this tool: [contributin
 ## Storybook
 
 If you are working on large application with multiple data dependencies, it can be useful to use Storybook to test the user interface of your component in an isolated environment. [Storybook](https://storybook.js.org/) is a tool in this situation.
+
+## Test
+
+Tests are also a good way to document the behavior of your code. Try to follow [AAA Pattern](/docs/code-craftsmanship/tests#aaa-pattern) when writing your tests. It will make your tests more readable.
