@@ -37,10 +37,12 @@ export const navigation = [
       {
         title: 'KISS principle',
         href: '/docs/code-craftsmanship/kiss-principle',
+        disabled: true,
       },
       {
         title: 'SOLID principle',
         href: '/docs/code-craftsmanship/solid-principle',
+        disabled: true,
       },
       {
         title: 'Tests',

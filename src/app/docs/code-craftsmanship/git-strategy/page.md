@@ -30,17 +30,19 @@ Following the previous section, it is important to keep a clean git history. Som
 
 Using `rebase` strategy to merge your branches on the main branch will also help you to keep your git history linear. It will be easier to understand what happened in the past. Using `rebase` strategy to sync your branch with the main branch will also ensure you that your branch will always contain an exact copy of the main branch.
 
-## Trunk-based development, git flow, or something else?
+## Trunk-based development or git flow
 
 There are a lot of different strategies when you should merge your branches on the main branch. The most popular are [trunk-based development](https://trunkbaseddevelopment.com/), [git flow](https://nvie.com/posts/a-successful-git-branching-model/), and [github flow](https://guides.github.com/introduction/flow/). They all have pros and cons. You should choose the one that fits your needs.
 
-**Trunk-based development** is a good strategy for small teams. It is very simple to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy.
+**Trunk-based development** is a good strategy for most of the teams. It is very simple to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy.
 
-**Git flow** is a good strategy for large teams. It is more complex to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy. It takes more time to have your code merged on the main branch but it is safer so it matches perfectly the larger organizations.
+**Git flow** is a good strategy for critical projects. It is more complex to understand and to use. It is also a good strategy for open-source projects since it is very easy to contribute to a project using this strategy. It takes more time to have your code merged on the main branch but it is safer so it matches perfectly projects with higher risks. Projects with higher risks are projects that can't afford to have a bug in production like in a factory or when the deployment is controlled by the client, at fixed date.
 
 ## Mono-repository
 
 A mono-repository is a git repository that contains multiple projects. It is useful to ensure a dependency synchronization between projects or if projects have dependency between each other. However it can have some drawbacks. It can be difficult to manage the access rights on the repository. It can also be difficult to manage the CI/CD pipeline. It can also be difficult to manage the versioning of the projects.
+
+Most modern dependency tools like `pnpm`, `yarn` and `npm` can handle mono-repo architecture natively without third-party library.
 
 ## Git hooks
 
@@ -51,3 +53,5 @@ When a project becomes bigger or if new developers join the team, it can be usef
 Just remember that git hooks may be overridden by the developers. It is a good idea to use them to enforce some rules but it is also a good idea to have a CI/CD pipeline that will ensure that the rules are respected.
 
 Official git documentation: [https://git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
+
+The best library of the moment is [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks). Like its name suggests, it is very simple to use.
