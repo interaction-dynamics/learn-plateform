@@ -177,8 +177,8 @@ function renderTotalPrices(priceWithCurrency: string) {
   return `total price: ${priceWithCurrency}`
 }
 
-renderTotalPrices(sumTotalPrice([1, 2, 3]), addEuro)
-renderTotalPrices(sumTotalPrice([1, 2, 3]), addUsDollar)
+renderTotalPrices(addEuro(sumTotalPrice([1, 2, 3])))
+renderTotalPrices(addUsDollar(sumTotalPrice([1, 2, 3])))
 ```
 
 The parent function now controls the chain of the sequence (sum + currency + adding label) but the code is more readable, maintainable and scalable.
