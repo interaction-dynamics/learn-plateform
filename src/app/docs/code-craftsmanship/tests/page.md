@@ -71,6 +71,32 @@ The most common way to test your codebase is to use a mix of different types of 
 
 This pyramid represents the amount of tests you should add to your code: a majority of unit tests, a smaller amount of integration tests, and an even smaller amount of end-to-end tests.
 
+### Unit tests
+
+Unit tests are tests that check the behavior of a small part of your codebase. They are the fastest to run and the cheapest to write. They are also the most stable. The challenge is to write them maintainable enough so you don't need to rewrite them every time you refactor your codebase.
+
+Our best combo for the moment is [Jest](https://jestjs.io/) for the test runner and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the testing library.
+
+### End-to-end tests
+
+End-to-end tests are tests that check the behavior of your application from the user's perspective. They are the most expensive tests to write and maintain. They are also the slowest to run. But they are very important since they are the only one to check the behavior of your application from the user's perspective.
+
+From our experience, [Playwright](https://playwright.dev/) is the best tool to write end-to-end tests. It is very easy to use and very stable.
+
+### Accessibility tests
+
+Nowadays, accessibility is very important. It may be useful to run some automated accessibility tests on your application. They won't cover everything but they will catch a lot of standard issues.
+
+[Playwright](https://playwright.dev/) can be used to write accessibility tests: https://playwright.dev/docs/accessibility-testing.
+
+For more details about accessibility, please refer to the [dedicated section](/docs/user-experience/accessibility) of this guide.
+
+### Visual tests
+
+Visual tests are a type of test that checks the visual aspect of your application. The goal is to take a screenshot of a part of the application before the changes and after the changes. If there are differences between the two screenshots, the test will fail. They are very useful since they can cover a lot of features with a small amount of tests. However they are harder to maintain since sometimes you really want to have a visual difference between the two screenshots like when you introduce a new feature.
+
+You can use [Playwright](https://playwright.dev/) to write visual tests: https://www.browsercat.com/post/ultimate-guide-visual-testing-playwright.
+
 ## AAA pattern
 
 When writing tests, it is important to follow the AAA pattern:
