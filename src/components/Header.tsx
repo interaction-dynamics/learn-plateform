@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { PropsWithChildren, useEffect, useState } from 'react'
 import Link from 'next/link'
 import clsx from 'clsx'
 
@@ -13,7 +13,7 @@ import DiscordIcon from './icons/DiscordIcon'
 import { discordUrl, githubRepositoryUrl, mediumUrl } from '@/lib/socialUrls'
 import MediumIcon from './icons/MediumIcon'
 
-export default function Header() {
+export default function Header({ children }: PropsWithChildren) {
   let [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -44,9 +44,7 @@ export default function Header() {
           <Logo className=" flex h-9 w-auto fill-slate-700 dark:fill-sky-100" />
         </Link>
       </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
-      </div>
+      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">{children}</div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
         <Link

@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation'
 import { Hero } from '@/components/Hero'
 import { Navigation } from '@/components/Navigation'
 import Header from './Header'
+import { Search } from './Search'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
@@ -10,7 +11,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex w-full flex-col">
-      <Header />
+      <Header>
+        <Search />
+      </Header>
 
       {isHomePage && <Hero />}
 

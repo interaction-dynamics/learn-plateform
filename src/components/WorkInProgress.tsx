@@ -29,7 +29,7 @@ export default function WorkInProgress() {
 
   return (
     <div className="p-5">
-      <div className="flex flex-col items-center justify-center rounded border border-slate-100 px-4 py-10 text-lg dark:border-slate-800 lg:text-sm">
+      <div className="flex flex-col items-center justify-center rounded-xl border border-slate-100 px-4 py-10 text-lg dark:border-slate-800 lg:text-sm">
         <div className="m-0 p-0 font-sans text-lg font-medium text-slate-900 dark:text-white">
           Work in progress
         </div>

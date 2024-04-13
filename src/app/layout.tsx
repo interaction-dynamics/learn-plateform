@@ -31,9 +31,7 @@ export default function RootLayout({ children }: Props) {
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">
-        <Providers>
-          <Layout>{children}</Layout>
-        </Providers>
+        <Providers>{children}</Providers>
         <Analytics />
         <Script id="google-analytics">
           {`
