@@ -8,8 +8,14 @@ import FormatPriceSmartDecimal from './FormatPriceSmartDecimal'
 import FormatPriceStyled from './FormatPriceStyled'
 import clsx from 'clsx'
 import { Highlight } from 'prism-react-renderer'
+import FormatPriceCode from './FormatPriceCode'
 
-const renders = [FormatPriceBasic, FormatPriceSmartDecimal, FormatPriceStyled]
+const renders = [
+  FormatPriceBasic,
+  FormatPriceSmartDecimal,
+  FormatPriceStyled,
+  FormatPriceCode,
+]
 
 export default function PriceRendering() {
   const [locale, setLocale] = useState('en-CA')
