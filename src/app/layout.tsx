@@ -15,8 +15,7 @@ export const metadata: Metadata = {
     template: '%s - Learn_Frontend',
     default: 'Learn_Frontend - Become a better front-end developer',
   },
-  description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+  description: `This platform is not like other programming courses. It won't teach you how to code, but it will teach you how to code better. It gathers the best practices in front-end development to help you become a better developer. Hope it will be useful to you!`,
 }
 
 interface Props {
