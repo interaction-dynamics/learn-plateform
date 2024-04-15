@@ -161,7 +161,7 @@ export default function PriceRendering() {
             </Highlight>
           </Card>
         ) : (
-          <Card className="relative h-64 flex-col items-center justify-center overflow-hidden">
+          <Card className="relative h-64 flex-col items-center justify-center overflow-hidden px-4 py-10">
             <div>
               <div className="text-5xl font-semibold">
                 {!isNaN(parseFloat(price)) && (
@@ -185,7 +185,7 @@ export default function PriceRendering() {
               index !== renderIndex && (
                 <Card
                   key={index}
-                  className="relative aspect-[6/3] flex-col items-center justify-center"
+                  className="relative aspect-[6/3] flex-col items-center justify-center px-4 py-10"
                 >
                   <button
                     className="absolute right-1 top-1 text-slate-300 transition dark:text-slate-600 dark:hover:text-white md:right-3 md:top-3"
