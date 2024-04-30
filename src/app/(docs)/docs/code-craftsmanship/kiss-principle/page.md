@@ -6,9 +6,7 @@ nextjs:
     description: KISS, an acronym for "Keep it simple, stupid!", is a design principle first noted by the U.S. Navy in 1960
 ---
 
-KISS is an acronym for **"Keep it simple, stupid!"**. In the development, it also exists under another form: [YANGI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (You Aren't Gonna Need It) and is a principle which arose from extreme programming (XP).
-
-Very often, developers tend to over-engineer their code. From the beginning, they try to make it as generic as possible to be able to reuse it in many different contexts. But this is not always a good idea.
+KISS is an acronym for **"Keep it simple, stupid!"**. Very often, developers tend to over-engineer their code. From the beginning, they try to make it as generic as possible to be able to reuse it in many different contexts. But this is not always a good idea.
 
 Sometimes, it is better to write a simple code that works for a specific context. And if you need to reuse it in another context, you can refactor it to make it more generic at this time.
 
@@ -47,3 +45,7 @@ Few tips to keep it simple:
 Depending on the context, you might have enough visibility about the future requirements. In this case, you can write more generic code. But force yourself to write the code matching the current needs and prepare just some parts of the code for the future and don't prepare everything. You will be able to keep the mindset of the KISS principle.
 
 Because even if you have a good visibility about the future needs, some new requirements might come and won't fit your perfect architecture. So you will have to refactor your code anyway.
+
+## You Aren't Gonna Need It (YANGI)
+
+A similar principle to KISS is YANGI (You Aren't Gonna Need It). It is a principle arose from extreme programming (XP) that says that you should not write code that you don't need. However the YANGI principle is more about not writing feature code while KISS is more specific about architecture and design.
