@@ -31,6 +31,9 @@ By writing code that is stupidly simple, developer will also understand that the
 
 In the opposite, if they write complex architecture, they will orient their code to the current and known future needs but it will be more likely not easy to update to unknown future needs.
 
+It also has benefits in the long-term since with the KISS principle, you will keep the same mindset years after years and your code quality will remain the same.
+With designed architecture, your code quality might be good at the beginning when you have the product vision in mind. But with time, your product will evolve and surpass the initial product vision and since you won't have the same iterative and perpertual mindset, your code quality will decrease.
+
 ## How to keep it simple?
 
 Few tips to keep it simple:
