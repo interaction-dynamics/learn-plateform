@@ -140,4 +140,6 @@ const price = new Intl.NumberFormat('de-DE', {
 }).format(amout)
 ```
 
+You can test the implementation with this [demo](/examples/price-rendering).
+
 For a more detailed explanation about rendering prices, you can check the article [Stop reinventing how to render price— UxNow #4](https://thibault-friedrich.medium.com/stop-reinventing-how-to-render-price-uxnow-4-286a7a178c85).
