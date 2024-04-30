@@ -6,11 +6,13 @@ nextjs:
     description: KISS, an acronym for "Keep it simple, stupid!", is a design principle first noted by the U.S. Navy in 1960
 ---
 
-KISS is an acronym for **"Keep it simple, stupid!"**. This principle is also known as Occam's razor, which states that the simplest solution is usually the best one.
+KISS is an acronym for **"Keep it simple, stupid!"**. In the development, it also exists under another form: [YANGI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (You Aren't Gonna Need It) and is a principle which arose from extreme programming (XP).
 
-Very often, developers who studied computer engineering tend to over-engineer their code. They try to make it as generic as possible to be able to reuse it in many different contexts. But this is not always a good idea.
+Very often, developers tend to over-engineer their code. From the beginning, they try to make it as generic as possible to be able to reuse it in many different contexts. But this is not always a good idea.
 
-Sometimes, it is better to write a simple code that works for a specific context. And if you need to reuse it in another context, you can refactor it to make it more generic.
+Sometimes, it is better to write a simple code that works for a specific context. And if you need to reuse it in another context, you can refactor it to make it more generic at this time.
+
+KISS principle fits more agile practices.
 
 ## Why simplicity is often better?
 
@@ -25,15 +27,20 @@ So, it is better to write a simple code that works for the current needs.
 
 The KISS principle is often considered as a waste of time by software architects. They think we can optimize by going directly to the generic solution. But in reality, it is often the opposite. The generic solution is often more complex and more difficult to maintain. So it is more expensive in the long term.
 
-An alternative is to keep the code simple but prepare it so it is easy to extend later if needed.
+By writing code that is stupidly simple, developer will also understand that the code will have to be updated in the future. So they will be more careful about the code they write and will make it easy to update to unknown future needs.
 
-<!-- There are several variants of the KISS principle:
-
-- Steve Jobs's "~~Simplify~~, ~~Simplify~~, Simplify", which simplified Henry David Thoreau's quote "Simplify, simplify, simplify." for emphasis. -->
+In the opposite, if they write complex architecture, they will orient their code to the current and known future needs but it will be more likely not easy to update to unknown future needs.
 
 ## How to keep it simple?
 
-{% workinprogress %}
-{% /workinprogress %}
+Few tips to keep it simple:
 
-<!-- TDD is a good way to keep it simple. -->
+- Write code using TDD (Test Driven Development). You write the tests first and then the code. And you code only things that are needed to make the tests pass.
+- Refactor your code often. If you see that you need to add a new feature, refactor your code to make it easy to add this feature.
+- Write your code in a way that it is easy to extend later if needed. It requires good skills since making code extendable is not always obvious.
+
+## Compromise
+
+Depending on the context, you might have enough visibility about the future requirements. In this case, you can write more generic code. But force yourself to write the code matching the current needs and prepare just some parts of the code for the future and don't prepare everything. You will be able to keep the mindset of the KISS principle.
+
+Because even if you have a good visibility about the future needs, some new requirements might come and won't fit your perfect architecture. So you will have to refactor your code anyway.
