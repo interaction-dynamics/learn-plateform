@@ -123,7 +123,6 @@ export const navigation = [
       {
         title: 'Accessibility',
         href: '/docs/user-experience/accessibility',
-        disabled: true,
       },
       {
         title: 'Heuristics rules',
