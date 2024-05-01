@@ -16,12 +16,12 @@ As a developer, you have sometimes the duty to say no to the product team.
 
 ## Explain the technical debt
 
-The technical debt is the cost of the future work that you will have to do to fix the code that you are writing today. Sometimes a new feature is some different to the existing codebase that it will introduce a lot of technical debt. It is important to explain the technical debt to the product team so they can balance the value of the feature with the cost of the technical debt.
+The technical debt is the cost of the future work that you will have to do to fix the code that you are writing today. Sometimes a new feature is so different to the existing codebase that it will introduce a lot of technical debt. It is important to explain the technical debt to the product team so they can balance the value of the feature with the cost of the technical debt.
 
 Depending on the experience of the product team, they might not be aware of the technical debt. They might also be aware of it but don't consider it as a priority.
 
 {% callout %}
-Remember that it will your role to fix all the issues coming from this technical debt. So it is important for you to choose to fix it now or later. Later might mean in the middle of the night or during the weekend if the issue is critical.
+Remember that it will your role to fix all the issues coming from this technical debt. So it is important for you to choose to fix it now or later. Later might mean in the middle of the night or during the weekend if the technical debt changed to a critical bug.
 {% /callout %}
 
 Up to you to explain the technical debt and the cost of it. You can also explain the cost of the technical debt in terms of money. Another solution is to include the technical debt in the feature estimation. It will reduce the team velocity but you will be sure that the technical debt will be managed.

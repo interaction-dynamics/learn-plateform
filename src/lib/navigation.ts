@@ -132,7 +132,6 @@ export const navigation = [
       {
         title: 'Mockups',
         href: '/docs/user-experience/mockups',
-        disabled: true,
       },
       {
         title: 'Analytics',
@@ -142,7 +141,6 @@ export const navigation = [
       {
         title: 'Design systems',
         href: '/docs/user-experience/design-systems',
-        disabled: true,
       },
       {
         title: 'Iteration process',
