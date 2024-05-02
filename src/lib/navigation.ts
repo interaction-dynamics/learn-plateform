@@ -84,6 +84,10 @@ export const navigation = [
         href: '/docs/frontend-engineering/linters-formatters',
       },
       {
+        title: 'Server-side rendering',
+        href: '/docs/frontend-engineering/server-side-rendering',
+      },
+      {
         title: 'Pure functions',
         href: '/docs/frontend-engineering/pure-functions',
       },
