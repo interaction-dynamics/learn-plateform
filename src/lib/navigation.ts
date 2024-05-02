@@ -157,7 +157,6 @@ export const navigation = [
       {
         title: 'Agile',
         href: '/docs/productivity/agile',
-        disabled: true,
       },
       {
         title: 'Six-week cycles',
