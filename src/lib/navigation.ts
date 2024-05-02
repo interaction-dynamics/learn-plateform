@@ -113,7 +113,6 @@ export const navigation = [
       {
         title: 'Micro-services',
         href: '/docs/frontend-engineering/micro-services',
-        disabled: true,
       },
     ],
   },
