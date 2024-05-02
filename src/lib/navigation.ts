@@ -177,7 +177,6 @@ export const navigation = [
       {
         title: 'No estimate',
         href: '/docs/productivity/no-estimate',
-        disabled: true,
       },
       {
         title: 'No Rules Rules',
