@@ -133,6 +133,10 @@ export const navigation = [
         href: '/docs/user-experience/mockups',
       },
       {
+        title: 'Iteration process',
+        href: '/docs/user-experience/interation-process',
+      },
+      {
         title: 'Analytics',
         href: '/docs/user-experience/analytics',
         disabled: true,
@@ -140,11 +144,6 @@ export const navigation = [
       {
         title: 'Design systems',
         href: '/docs/user-experience/design-systems',
-      },
-      {
-        title: 'Iteration process',
-        href: '/docs/user-experience/interation-process',
-        disabled: true,
       },
     ],
   },
