@@ -142,7 +142,6 @@ export const navigation = [
       {
         title: 'Analytics',
         href: '/docs/user-experience/analytics',
-        disabled: true,
       },
       {
         title: 'Design systems',
