@@ -8,7 +8,7 @@ nextjs:
 
 > Peter Drucker said once: You can’t improve what you don’t measure.
 
-Analytics is the key to understand your users and improve your website. You can use analytics to:
+Analytics is the key to understand what can be improved and to measure the improvements. You can use analytics to:
 
 - understand your users
 - improve your website
