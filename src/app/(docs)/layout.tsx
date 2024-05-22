@@ -10,8 +10,6 @@ export const metadata: Metadata = {
     template: '%s - Learn_Frontend',
     default: 'Learn_Frontend - Become a better front-end developer',
   },
-  description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
