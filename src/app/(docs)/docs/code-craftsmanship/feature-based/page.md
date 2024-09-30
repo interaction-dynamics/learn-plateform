@@ -27,11 +27,11 @@ src/
     └── data.ts
 ```
 
-The problem with this kind of architecture based on layers is that it is hard to find the code related to a feature. For example, if you want to find the code related to the login page, you have to search in the `components`, `hooks`, `utils` and `state` folders. It makes it harder to debug and to remove a feature.
+The problem with this kind of architecture based on type is that it is hard to find the code related to a feature. For example, if you want to find the code related to the login page, you have to search in the `components`, `hooks`, `utils` and `state` folders. It makes it harder to debug and to remove a feature.
 
 A better way to organize your project is to group the code by feature. For example, the login page will be in the `login` folder and the dashboard page in the `dashboard` folder.
 
-If you want, you can also follow an hybrid approach and group the code by feature and by layer. For example, you can have a `login` folder with a `components`, `hooks`, `utils` and `state` folders inside. You can also keep some root folders for the code that is shared between features.
+If you want, you can also follow an hybrid approach and group the code by feature and by type. For example, you can have a `login` folder with a `components`, `hooks`, `utils` and `state` folders inside. You can also keep some root folders for the code that is shared between features.
 
 ```bash
 src/
